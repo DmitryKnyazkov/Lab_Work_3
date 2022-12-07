@@ -2,7 +2,11 @@ OUTPUT_FILE = "output.txt"
 
 
 def task():
-    ...  # TODO записать лесенку в файл
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        for k in range(1,11):
+            f.write(f"{k* '*':>10}\n")
+
+# TODO записать лесенку в файл
 
 
 if __name__ == "__main__":
